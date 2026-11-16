@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Contact | Bumi Bersuara</title>
+
+    <link rel="icon" href="images/favicon.png">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+
+
+<header class="navbar">
+
+    <a href="index.html" class="logo">
+
+        <span class="logo-icon">
+            🌊
+        </span>
+
+        <div>
+            <strong>BUMI</strong>
+            <span>BERSUARA</span>
+        </div>
+
+    </a>
+
+
+    <nav id="navMenu">
+
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="artikel.html">Artikel</a>
+        <a href="galeri.html">Galeri</a>
+        <a href="contact.html" class="active">Contact</a>
+
+    </nav>
+
+
+    <button class="menu-toggle" onclick="toggleMenu()">
+        ☰
+    </button>
+
+</header>
+
+
+
+<section class="page-hero">
+
+    <div>
+
+        <span class="eyebrow light">
+            CONTACT
+        </span>
+
+        <h1>
+            Mari Bersama Menjaga Pesisir
+        </h1>
+
+        <p>
+            Punya ide, kritik atau informasi mengenai
+            lingkungan pesisir? Sampaikan kepada kami.
+        </p>
+
+    </div>
+
+</section>
+
+
+
+<section class="section contact-section">
+
+
+    <div class="contact-info">
+
+        <span class="eyebrow">
+            HUBUNGI KAMI
+        </span>
+
+        <h2>
+            Suara untuk bumi
+            dimulai dari kepedulian.
+        </h2>
+
+        <p>
+            Website ini merupakan media edukasi digital
+            mengenai abrasi pantai dan mangrove.
+        </p>
+
+
+        <div class="contact-card">
+
+            <span>📧</span>
+
+            <div>
+
+                <strong>
+                    Email
+                </strong>
+
+                <p>
+                    infobumibersuara@gmail.com
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <div class="contact-card">
+
+            <span>🌍</span>
+
+            <div>
+
+                <strong>
+                    Fokus
+                </strong>
+
+                <p>
+                    Lingkungan & wilayah pesisir
+                </p>
+
+            </div>
+
+        </div>
+
+
+    </div>
+
+
+
+    <div class="form-box">
+
+        <form id="contactForm">
+
+            <div class="form-group">
+
+                <label>
+                    Nama
+                </label>
+
+                <input
+                    type="text"
+                    id="nama"
+                    placeholder="Masukkan nama"
+                    required
+                >
+
+            </div>
+
+
+            <div class="form-group">
+
+                <label>
+                    Email
+                </label>
+
+                <input
+                    type="email"
+                    id="email"
+                    placeholder="nama@email.com"
+                    required
+                >
+
+            </div>
+
+
+            <div class="form-group">
+
+                <label>
+                    Topik
+                </label>
+
+                <select id="topik" required>
+
+                    <option value="">
+                        Pilih topik
+                    </option>
+
+                    <option>
+                        Abrasi Pantai
+                    </option>
+
+                    <option>
+                        Mangrove
+                    </option>
+
+                    <option>
+                        Solusi Lingkungan
+                    </option>
+
+                    <option>
+                        Kerja sama
+                    </option>
+
+                </select>
+
+            </div>
+
+
+            <div class="form-group">
+
+                <label>
+                    Pesan
+                </label>
+
+                <textarea
+                    id="pesan"
+                    rows="6"
+                    placeholder="Tulis pesan..."
+                    required
+                ></textarea>
+
+            </div>
+
+
+            <button type="submit" class="btn btn-primary full">
+                Kirim Pesan →
+            </button>
+
+        </form>
+
+
+        <div id="formMessage" class="form-message"></div>
+
+    </div>
+
+</section>
+
+
+
+<footer>
+
+    <div class="copyright">
+        © 2026 Bumi Bersuara — EcoDigital for Environment
+    </div>
+
+</footer>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>

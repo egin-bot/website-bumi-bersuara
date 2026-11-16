@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Galeri | Bumi Bersuara</title>
+
+    <link rel="icon" href="images/favicon.png">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+
+
+<!-- ==========================================
+     NAVBAR
+========================================== -->
+
+<header class="navbar">
+
+    <a href="index.html" class="logo">
+
+        <span class="logo-icon">
+            🌊
+        </span>
+
+        <div>
+            <strong>BUMI</strong>
+            <span>BERSUARA</span>
+        </div>
+
+    </a>
+
+
+    <nav id="navMenu">
+
+        <a href="index.html">
+            Home
+        </a>
+
+        <a href="about.html">
+            About
+        </a>
+
+        <a href="artikel.html">
+            Artikel
+        </a>
+
+        <a href="galeri.html" class="active">
+            Galeri
+        </a>
+
+        <a href="contact.html">
+            Contact
+        </a>
+
+    </nav>
+
+
+    <button
+        class="menu-toggle"
+        onclick="toggleMenu()">
+
+        ☰
+
+    </button>
+
+</header>
+
+
+
+<!-- ==========================================
+     HERO
+========================================== -->
+
+<section class="page-hero">
+
+    <div>
+
+        <span class="eyebrow light">
+            VISUAL STORY
+        </span>
+
+        <h1>
+            Galeri Pesisir
+        </h1>
+
+        <p>
+            Dokumentasi visual mengenai abrasi,
+            mangrove dan kehidupan pesisir.
+        </p>
+
+    </div>
+
+</section>
+
+
+
+<!-- ==========================================
+     GALERI
+========================================== -->
+
+<section class="section gallery-section">
+
+
+    <!-- JUDUL -->
+
+    <div class="section-heading">
+
+        <span class="eyebrow">
+            DOKUMENTASI LINGKUNGAN
+        </span>
+
+        <h2>
+            Melihat kondisi pesisir
+            melalui visual
+        </h2>
+
+        <p>
+            Kumpulan gambar yang menggambarkan kondisi
+            pesisir, abrasi, ekosistem mangrove,
+            serta berbagai upaya menjaga lingkungan.
+        </p>
+
+    </div>
+
+
+
+    <!-- ======================================
+         FILTER
+    ====================================== -->
+
+    <div class="filter-buttons">
+
+        <button
+            onclick="filterGallery('all')"
+            class="filter active-filter">
+
+            Semua
+
+        </button>
+
+
+        <button
+            onclick="filterGallery('abrasi')"
+            class="filter">
+
+            Abrasi
+
+        </button>
+
+
+        <button
+            onclick="filterGallery('mangrove')"
+            class="filter">
+
+            Mangrove
+
+        </button>
+
+
+        <button
+            onclick="filterGallery('solusi')"
+            class="filter">
+
+            Solusi
+
+        </button>
+
+    </div>
+
+
+
+    <!-- ======================================
+         GALERI FOTO
+    ====================================== -->
+
+    <div class="gallery-grid">
+
+
+        <!-- FOTO 1 -->
+
+        <div
+            class="gallery-item abrasi"
+            onclick="openGallery(this)">
+
+            <img
+                src="https://images.unsplash.com/photo-1500534623283-312aade485b7?auto=format&fit=crop&w=1200&q=80"
+                alt="Pesisir yang berubah">
+
+            <div class="gallery-overlay">
+
+                <span>
+                    ABRASI
+                </span>
+
+                <h3>
+                    Pesisir yang Berubah
+                </h3>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- FOTO 2 -->
+
+        <div
+            class="gallery-item mangrove"
+            onclick="openGallery(this)">
+
+            <img
+                src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1200&q=80"
+                alt="Ekosistem pesisir">
+
+            <div class="gallery-overlay">
+
+                <span>
+                    MANGROVE
+                </span>
+
+                <h3>
+                    Ekosistem Pesisir
+                </h3>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- FOTO 3 -->
+
+        <div
+            class="gallery-item mangrove"
+            onclick="openGallery(this)">
+
+            <img
+                src="https://images.unsplash.com/photo-1544551763-46a013bb70d5?auto=format&fit=crop&w=1200&q=80"
+                alt="Kehidupan laut">
+
+            <div class="gallery-overlay">
+
+                <span>
+                    MANGROVE
+                </span>
+
+                <h3>
+                    Kehidupan Laut
+                </h3>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- FOTO 4 -->
+
+        <div
+            class="gallery-item solusi"
+            onclick="openGallery(this)">
+
+            <img
+                src="https://images.unsplash.com/photo-1469474968028-56623f02e42e?auto=format&fit=crop&w=1200&q=80"
+                alt="Menjaga lingkungan">
+
+            <div class="gallery-overlay">
+
+                <span>
+                    SOLUSI
+                </span>
+
+                <h3>
+                    Menjaga Lingkungan
+                </h3>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- FOTO 5 -->
+
+        <div
+            class="gallery-item abrasi"
+            onclick="openGallery(this)">
+
+            <img
+                src="https://images.unsplash.com/photo-1518837695005-2083093ee35b?auto=format&fit=crop&w=1200&q=80"
+                alt="Energi gelombang">
+
+            <div class="gallery-overlay">
+
+                <span>
+                    ABRASI
+                </span>
+
+                <h3>
+                    Energi Gelombang
+                </h3>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- FOTO 6 -->
+
+        <div
+            class="gallery-item solusi"
+            onclick="openGallery(this)">
+
+            <img
+                src="https://images.unsplash.com/photo-1497250681960-ef046c08a56e?auto=format&fit=crop&w=1200&q=80"
+                alt="Penghijauan">
+
+            <div class="gallery-overlay">
+
+                <span>
+                    SOLUSI
+                </span>
+
+                <h3>
+                    Penghijauan
+                </h3>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- ==================================
+             FOTO TAMBAHAN
+        ================================== -->
+
+
+        <!-- FOTO 7 -->
+
+        <div
+            class="gallery-item solusi"
+            onclick="openGallery(this)">
+
+            <img
+                src="images/galeri-7.jpg"
+                alt="Penanaman mangrove">
+
+            <div class="gallery-overlay">
+
+                <span>
+                    SOLUSI
+                </span>
+
+                <h3>
+                    Penanaman Mangrove
+                </h3>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- FOTO 8 -->
+
+        <div
+            class="gallery-item abrasi"
+            onclick="openGallery(this)">
+
+            <img
+                src="images/galeri-8.jpg"
+                alt="Perubahan garis pantai">
+
+            <div class="gallery-overlay">
+
+                <span>
+                    ABRASI
+                </span>
+
+                <h3>
+                    Perubahan Garis Pantai
+                </h3>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- FOTO 9 -->
+
+        <div
+            class="gallery-item mangrove"
+            onclick="openGallery(this)">
+
+            <img
+                src="images/galeri-9.jpg"
+                alt="Hutan mangrove">
+
+            <div class="gallery-overlay">
+
+                <span>
+                    MANGROVE
+                </span>
+
+                <h3>
+                    Hutan Mangrove
+                </h3>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- FOTO 10 -->
+
+        <div
+            class="gallery-item solusi"
+            onclick="openGallery(this)">
+
+            <img
+                src="images/galeri-10.jpg"
+                alt="Konservasi pesisir">
+
+            <div class="gallery-overlay">
+
+                <span>
+                    SOLUSI
+                </span>
+
+                <h3>
+                    Konservasi Pesisir
+                </h3>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- FOTO 11 -->
+
+        <div
+            class="gallery-item abrasi"
+            onclick="openGallery(this)">
+
+            <img
+                src="images/galeri-11.jpg"
+                alt="Dampak abrasi">
+
+            <div class="gallery-overlay">
+
+                <span>
+                    ABRASI
+                </span>
+
+                <h3>
+                    Dampak Abrasi
+                </h3>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- FOTO 12 -->
+
+        <div
+            class="gallery-item mangrove"
+            onclick="openGallery(this)">
+
+            <img
+                src="images/galeri-12.jpg"
+                alt="Ekosistem mangrove">
+
+            <div class="gallery-overlay">
+
+                <span>
+                    MANGROVE
+                </span>
+
+                <h3>
+                    Ekosistem Mangrove
+                </h3>
+
+            </div>
+
+        </div>
+
+
+    </div>
+
+</section>
+
+
+
+<!-- ==========================================
+     LIGHTBOX
+========================================== -->
+
+<div
+    id="galleryModal"
+    class="gallery-modal"
+    onclick="closeGallery()">
+
+
+    <button
+        class="close-gallery"
+        onclick="event.stopPropagation()">
+
+        ×
+
+    </button>
+
+
+    <img
+        id="galleryImage"
+        src=""
+        alt="Preview foto">
+
+
+    <div class="modal-caption">
+
+        <span id="modalCategory"></span>
+
+        <h3 id="modalTitle"></h3>
+
+    </div>
+
+</div>
+
+
+
+<!-- ==========================================
+     FOOTER
+========================================== -->
+
+<footer>
+
+    <div class="copyright">
+
+        © 2026 Bumi Bersuara — EcoDigital for Environment
+
+    </div>
+
+</footer>
+
+
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
